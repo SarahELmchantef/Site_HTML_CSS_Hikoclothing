@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Contact</title>
+</head>
+<body>
+  <a id="top"></a>
+  <header>
+    <!-- Barre de navigation -->
+    <div class="navigation-bar">
+      <div class="logo">
+          <a href="index.html">Hiko<span>Clothing</span></a>
+      </div>
+      <input type="checkbox" id="menu-toggle" class="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+      </label>
+      <nav>
+        <ul class="menu">
+            <li>
+                <a href="index.html">Accueil</a>
+            </li>
+            <li>
+                <a href="nouv.html">Nouveautés</a>
+            </li>
+            <li>
+                <a href="environnement.html">Environnement</a>
+            </li>
+            <li>
+                <a href="shop.html">Shopper</a>
+            </li>
+            <li>
+                <a href="donner.html">Donner</a>
+            </li>
+            <li>
+                <a href="aprop.html">À propos de nous</a>
+            </li>
+            <li class="active">
+              <a href="contact.html">Contact</a>
+              </li>
+              <li>
+                <a href="connexion.html">Connexion</a>
+              </li>
+          
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="header-background">
+      <h1 class="page-title2">Faites-nous part de votre ressenti !</h1>
+      <div class="texte-sousletitre">
+        <p>Que pensez-vous de notre site ? De votre commande ?
+           Du délai de livraison ?<br> Aidez-nous à nous améliorer !
+        </p>
+      </div>
+      <div class="container-contact">
+          <div class="title">Formulaire de Contact</div>
+          <form action="#">
+              <div class="user-details">
+                  <div class="input-box">
+                      <span class="details">Nom</span>
+                      <input type="text" placeholder="Lemarchand" required>
+                  </div>
+                  <div class="input-box">
+                      <span class="details">Prénom</span>
+                      <input type="text" placeholder="Céline" required>
+                  </div>
+                  <div class="input-box">
+                      <span class="details">Adresse</span>
+                      <input type="text" placeholder="123 Rue des chevreuils" required>
+                  </div>
+                  <div class="input-box">
+                      <span class="details">Email</span>
+                      <input type="email" placeholder="celinelemarchand@gmail.com" required>
+                  </div>
+                  <div class="input-box">
+                      <span class="details">Numéro de téléphone</span>
+                      <input type="text" placeholder="01 23 45 67 89" required>
+                  </div>
+                  <div class="input-box">
+                    <span class="details">Niveau de satisfaction</span>
+                    <input type="range" id="satisfaction" name="satisfaction" min="1" max="10">
+                  </div>
+                  <div class="input-box">
+                      <span class="details">Message</span>
+                      <textarea placeholder="Dites-nous tout !" required></textarea>
+                  </div>
+              </div>
+              <div class="gender-details">
+                  <input type="radio" name="gender" id="dot-1">
+                  <input type="radio" name="gender" id="dot-2">
+                  <input type="radio" name="gender" id="dot-3">
+                  <span class="gender-title">Genre</span>
+                  <div class="category">
+                      <label for="dot-1">
+                          <span class="dot one"></span>
+                          <span class="gender">Homme</span>
+                      </label>
+                      <label for="dot-2">
+                          <span class="dot two"></span>
+                          <span class="gender">Femme</span>
+                      </label>
+                      <label for="dot-3">
+                          <span class="dot three"></span>
+                          <span class="gender">Autre</span>
+                      </label>
+                  </div>
+              </div>
+              <div class="button">
+                  <input type="submit" value="Soumettre">
+              </div>
+          </form>
+      </div>
+      <h2 class="page-title2">Questions Fréquentes</h2>
+      <details class="faq-item" open>
+          <summary class="faq-resume">
+              Quel est le délai de livraison ?
+              <svg class="icone-controle icone-expand" width="24" height="24" role="presentation">
+                  <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+              <svg class="icone-controle icone-fermer" width="24" height="24" role="presentation">
+                  <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+          </summary>
+          <p class="faq-reponse">En France métropolitaine, le délai peut
+            varier entre moins d'une semaine et un mois en fonction de la
+            commande. Si la commande concerne un article déjà prêt, alors
+            on peut compter près d'une semaine. Si vous faites une demande
+            pour un produit spécial et sur mesure, il faudra attendre près
+            d'un mois.</p>
+      </details>
+
+      <details class="faq-item">
+          <summary class="faq-resume">
+              Quels sont les principaux sites de dons ?
+              <svg class="icone-controle icone-expand" width="24" height="24" role="presentation">
+                  <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+              <svg class="icone-controle icone-fermer" width="24" height="24" role="presentation">
+                  <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+          </summary>
+          <p class="faq-reponse">Grâce à nos partenaires, il est possible
+            de donner les vêtements que vous ne voulez plus dans de nombreuses
+            enseignes engagées dans la consommation textile écologique. On note
+            Le Slip Français ou bien La Gentle Factory présentes à Paris,
+            Bordeaux, Lille, Nantes et à Aix-en-Provence. <br> Il est aussi
+            possible que nous venions nous-même les chercher à des dates
+            précises que nous renseignerons sur le site à ce moment-là, si
+            vous êtes situés en région parisienne.
+          </p>
+      </details>
+
+      <details class="faq-item">
+          <summary class="faq-resume">
+              Comment faire une commande sur-mesure ?
+              <svg class="icone-controle icone-expand" width="24" height="24" role="presentation">
+                  <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+              <svg class="icone-controle icone-fermer" width="24" height="24" role="presentation">
+                  <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                  <path d="M0 0h24v24H0z" fill="none"/>
+              </svg>
+          </summary>
+          <p class="faq-reponse">Dans la rubrique Shopper, il y a une catégorie 
+            proposant du sur-mesure. Il faut donc y remplir un formulaire qui 
+            renseignera vos mensurations et votre requête particulière. Suite à 
+            ça, nous vous contacterons par téléphone pour prendre connaissance 
+            plus profondément de votre demande.
+          </p>
+      </details>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-section about">
+        <h2 class="footer-title">Nos valeurs</h2>
+        <p>HikoClothing est une marque de vêtements dédiée à 
+          la mode durable et éthique. Toutes nos pièces sont 
+          cousues et fabriquées en France dans des ateliers
+          respecteux de l'environnement et de nos salariés.</p>
+      </div>
+      <div class="footer-section contact">
+        <h2 class="footer-title">Contact</h2>
+        <p>Email: contact@hikoclothing.com</p>
+        <p>Téléphone: +33 1 23 45 67 89</p>
+        <p>Adresse: 123 Rue de la Mode, 75000 Paris, France</p>
+      </div>
+      <div class="footer-section social">
+        <h2 class="footer-title">Suivez-nous</h2>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/share/19qMdvVkHs/" target="_blank"><img src="images/facebook1.jpg" alt="Facebook"></a>
+          <a href="https://x.com/HikoClothingfr" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+          <a href="https://www.instagram.com/hiko.clothing?igsh=MTM1eHFxaWcwc2NtNw==" target="_blank"><img src="images/insta.png" alt="Instagram"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <img src="images/upec.jpg" alt="HikoClothing Logo" class="footer-logo">
+      <p>&copy; HikoClothing, Janvier 2024, PEIRO TOMAS Maylee, EL MCHANTEF Sarah et BAMBA Espera. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <a href="#top" id="scrollToTopBtn" title="Go to top">
+    <img src="images/fleche.png" alt="Go to top">
+  </a>
+</body>
+</html>

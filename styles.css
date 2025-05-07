@@ -1,0 +1,1501 @@
+/* Réinitialisation globale */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: century;
+}
+
+/* Barre de navigation */
+.navigation-bar {
+background-color: rgba(0, 0, 0, 0.8); /* Fond semi-transparent */
+padding: 10px 20px;
+position: fixed; /* Fixe la barre en haut */
+top: 0; /* Position en haut */
+left: 0; /* Aligne à gauche */
+width: 100%; /* S'étend sur toute la largeur */
+z-index: 1000; /* Au-dessus du contenu */
+display: flex;
+align-items: center;
+justify-content: space-between;
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Ajout d'une ombre */
+margin-bottom: 10px;
+}
+
+/*Menu burger*/
+.menu-toggle {
+display: none;
+}
+
+.menu-icon {
+display: none;
+flex-direction: column;
+cursor: pointer;
+}
+
+.menu-line {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-left: 20px;
+}
+
+.menu a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+
+
+/* Logo */
+.logo a {
+color: white;
+text-decoration: none;
+font-size: 24px;
+font-weight: bold;
+padding: 14px 16px;
+display: block;
+}
+
+.logo span {
+color: rgb(132, 139, 121);
+font-weight: bold;
+font-size: 1.5rem;
+}
+
+/* Menu */
+
+ul li a {
+text-decoration: none;
+color: #fff;
+padding: 10px 20px;
+text-transform: uppercase;
+border: 1px solid transparent;
+margin: 0 5px; /* Ajustement de l'espacement */
+font-weight: 500;
+transition: 0.6s ease;
+}
+
+ul li a:hover {
+background: #fff;
+color: #000;
+border-radius: 4px; /* Ajout de coins arrondis */
+}
+
+ul li.active a {
+background: #fff;
+color: #000;
+border-radius: 4px;
+}
+
+
+/* Image de fond spécifique à la page d'accueil */
+.header-background {
+background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/satin.jpg);
+height: fit-content;
+background-size: cover;
+background-position: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+.header-background-accueil {
+background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/satin.jpg);
+height: 100vh;
+background-size: cover;
+background-position: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+text-align: center;
+}
+
+
+/* Titre principal */
+.titre h1 {
+  color: #fff;
+  font-size: 3rem;
+  margin-bottom: 20px;
+  margin-top: auto;
+  text-shadow: 2px 2px rgba(0, 0, 0, 0.7);
+}
+
+/* Boutons dans l'en-tête */
+.bouton {
+  display: flex;
+  gap: 20px;
+}
+
+.bouton a {
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.bouton a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/* Titre spécifique à la page Nouveautés */
+.page-title {
+  font-size: 2.5rem;
+  color: #22372b;
+  text-align: center;
+  margin: 100px 0 20px;
+}
+
+.page-title2 {
+  font-size: 2.5rem;
+  color: #fff;
+  text-align: center;
+  margin: 100px 0 20px;
+}
+
+.page-title3 {
+ font-size: 25px;
+  color: #22372b;
+  text-align: center;
+  margin: 100px 0 20px;
+}
+
+/*Partie nouveauté*/
+
+:root {
+  --white: #F5F5F5;
+  --light: #E0C9CB;
+  --tan: #C3A1A0;
+  --pink: #D9AAB7;
+  --rose: #BA7E7E;
+  --dark: #4E4E4E;
+}
+
+.texte-sousletitre {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  max-width: 800px; /* Limite la largeur du texte */
+  margin: 0 auto; /* Centre le texte */
+  padding: 10px 20px; /* Ajoute un peu de padding pour espacer le texte */
+  border: 2px solid #fff; /* Ajoute une bordure blanche */
+  border-radius: 10px; /* Ajoute des coins arrondis */
+  background-color: rgba(255, 255, 255, 0.2); /* Ajoute un fond semi-transparent */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajoute une ombre pour un effet de profondeur */
+  font-family: 'Courier New', Courier, monospace; /* Utilise une police plus stylée */
+  color: #fff;
+}
+
+.nouveaute {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 colonnes */
+  grid-template-rows: repeat(5, auto); /* 5 lignes */
+  gap: 80px; /* Espacement entre les produits */
+  max-width: 800px; /* Largeur maximale de la grille */
+  margin: 0 auto; /* Centrer la grille */
+}
+
+.product-card {
+  border: 1px solid #ccc; /* Bordure autour des cartes */
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+/* Effet hover */
+.product-card:hover {
+  transform: scale(1.05); /* Zoom sur la carte */
+  box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Image du produit */
+.product-card img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Titres et texte */
+.product-card h1 {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+.product-card h2 {
+  font-size: 1em;
+  color: #22372b;
+  margin: 10px 0;
+}
+
+.product-card p {
+  font-size: 0.9em;
+  color: #555;
+}
+
+/* Section des tailles */
+.sizes {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.sizes label {
+  font-size: 0.8em;
+  color: #333;
+}
+
+.sizes input[type="radio"] {
+  margin-right: 5px;
+}
+
+.buttons {
+  display: flex;
+  gap: 0.5em;
+}
+
+.buttons .add {
+  background: var(--rose);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.buttons .add:hover {
+  background: var(--pink);
+}
+
+.buttons .like {
+  background: none;
+  color: var(--rose);
+  border: 1px solid var(--rose);
+  border-radius: 50%;
+  padding: 0.5em;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.buttons .like:hover {
+  background: var(--rose);
+  color: var(--white);
+}
+
+
+/*test*/
+
+.slides input[type="radio"] { display: none; }
+.slides figure {
+  visibility: hidden; opacity: 0;
+  transition: all 0.5s;
+}
+.slides input[type="radio"]:checked + figure {
+  visibility: visible; opacity: 1;
+}
+
+.slides {
+  position: relative;
+  max-width: 600px; height: 400px;
+}
+.slides img, .slides figcaption, .slides label {
+  position: absolute;
+}
+.slides label, .slides figcaption {
+  color: #fff; 
+  background: rgba(0, 0, 0, 0.7);
+}
+
+
+.slides img {
+  top: 0; left: 0;
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover;
+}
+
+
+.slides label {
+  top: 50%; 
+  transform: translateY(-50%); 
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  width: 50px; 
+  height: 50px; 
+  border-radius: 50%;
+  font-size: 1.5em; 
+  cursor: pointer;
+}
+.slides label.last { left: 10px; }
+.slides label.next { right: 10px; }
+
+
+
+
+
+
+
+
+
+/*Page environnement*/
+/* Classe pour les images */
+.image-section img {
+  width: 70%; /* Prend toute la largeur disponible */
+  height: auto; /* Conserve les proportions de l'image */
+  display: block; /* Assure que l'image prend toute la largeur disponible */
+  object-fit: contain; /* Assure que l'image est contenue dans son conteneur sans être déformée */
+  margin: 0; /* Supprime les marges indésirables */
+  padding: 20px;
+  border-radius: 0;
+}
+
+/* Classe pour le texte */
+.text-env {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  max-width: 100%; /* Limite la largeur du texte */
+  padding: 15px; /* Ajoute un peu de padding pour espacer le texte */
+  border: 2px solid #fff; /* Ajoute une bordure blanche */
+  background-color: rgba(255, 255, 255, 0.2); /* Ajoute un fond semi-transparent */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajoute une ombre pour un effet de profondeur */
+  font-family: 'Courier New', Courier, monospace; /* Utilise une police plus stylée */
+  color: #fff;
+  margin-left: 0; /* Ajoute une marge pour espacer le texte de l'image */
+}
+
+
+/* Classe pour le conteneur de contenu */
+
+
+.content-section-1  img{
+  float: left;
+  width: 50%;
+}
+
+.content-section-1  .text-env{
+  vertical-align: middle;
+  margin-top: 5em;
+  float: right;
+  width: 50%;
+
+}
+
+.content-section-2  img{
+  float: right;
+  width: 50%;
+}
+
+.content-section-2  .text-env{
+  vertical-align: middle;
+  margin-top: 5em;
+  float: left;
+  width: 50%;
+
+}
+
+
+/*page à propos de moi*/
+
+#about {
+padding: 50px 0;
+text-align: center;
+}
+
+.about-1 h1 {
+font-size: 2.5rem;
+font-weight: bold;
+margin-bottom: 20px;
+text-transform: uppercase;
+}
+
+.about-1 p {
+font-size: 24px; /* Augmenter la taille de la police */
+margin-bottom: 40px;
+max-width: 800px;
+margin-left: auto;
+margin-right: auto;
+line-height: 1.8;
+color: #f0f0f0;
+}
+
+/* Conteneur principal */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Organisation en colonnes */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding-top: 20px;
+}
+
+/* Style des colonnes individuelles */
+.col {
+  flex: 1;
+  min-width: 280px;
+  max-width: 350px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Effet hover sur les colonnes */
+.col:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Titre de chaque personne */
+.about-item h3 {
+  margin-bottom: 15px;
+  font-size: 1.8rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+/* Photo de profil */
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #fff;
+}
+
+/* Texte descriptif */
+.about-item p {
+  font-size: 1rem;
+  margin-bottom: 15px;
+  color: #e0e0e0;
+}
+
+/* Bouton CV */
+.cv-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.cv-link:hover {
+  background-color: #fff;
+  color: #fff;
+}
+
+
+/*Pour la page contact*/
+.form-title {
+  font-size: 30px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fff; /* Changer la couleur du titre en blanc */
+}
+
+.container-contact .title,
+.user-details .input-box .details,
+.gender-details .gender-title {
+  text-align: left;
+}
+
+.container-contact {
+  max-width: 700px;
+  width: 100%;
+  background: #fff; /* Fond blanc pour le formulaire */
+  padding: 25px 30px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  color: #000;
+  margin-top: 20px; /* Changer la couleur du texte en noir */
+}
+
+.container-contact .title {
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+  color: #000; /* Changer la couleur du titre en noir */
+  text-align: left;
+}
+
+.container-contact .title::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  background: linear-gradient(135deg, #9CAF88, #F1ABB9);
+}
+
+.container-contact form .user-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+
+form .user-details .input-box {
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+
+.user-details .input-box .details {
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+  color: #000; /* Changer la couleur du texte en noir */
+}
+
+.user-details .input-box input,
+.user-details .input-box textarea {
+  height: 45px;
+  width: 100%;
+  outline: none;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  font-size: 16px;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+  background: #fff; /* Fond blanc pour les champs de saisie */
+  color: #000; /* Changer la couleur du texte en noir */
+}
+
+.user-details .input-box input:focus,
+.user-details .input-box input:valid,
+.user-details .input-box textarea:focus,
+.user-details .input-box textarea:valid {
+  border-color: #9CAF88;
+}
+
+form .gender-details .gender-title {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000; /* Changer la couleur du texte en noir */
+}
+
+form .gender-details .category {
+  display: flex;
+  width: 80%;
+  margin: 14px 0;
+  justify-content: space-between;
+}
+
+.gender-details .category label {
+  display: flex;
+  align-items: center;
+  color: #000; /* Changer la couleur du texte en noir */
+}
+
+.gender-details .category .dot {
+  height: 18px;
+  width: 18px;
+  background: #d9d9d9;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+
+#satisfaction {
+width: 100%;
+margin-bottom: 10px;
+}
+
+#satisfaction-value {
+display: block;
+font-size: 16px;
+color: #000;
+}
+
+#dot-1:checked ~ .category label .one,
+#dot-2:checked ~ .category label .two,
+#dot-3:checked ~ .category label .three {
+  border-color: #d9d9d9;
+  background: #9b59b6;
+}
+
+form input[type="radio"] {
+  display: none;
+}
+
+form .button {
+  height: 45px;
+  margin: 45px 0;
+}
+
+form .button input {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  color: #000; /* Changer la couleur du texte en noir */
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  background: #fff; /* Changer la couleur de fond en blanc */
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+
+
+.faq-item {
+width: 75%;
+min-height: 5px;
+max-width: 700px;
+padding: 25px 30px; /* Ajustement du padding */
+margin: 0 auto 20px; /* Ajustement des marges */
+position: relative;
+font-size: 22px;
+border: 1px solid rgba(0,0,0,.1);
+border-radius: 5px; /* Ajustement du border-radius */
+background: #fff; /* Ajout du fond blanc */
+box-sizing: border-box;
+transition: all .3s;
+}
+
+
+.faq-item + .faq-item {
+margin-top: 20px;
+}
+
+.faq-item[open] {
+min-height: 50px;
+background-color: #f6f7f8;
+box-shadow: 2px 2px 20px rgba(0,0,0,.2);
+}
+
+.faq-reponse {
+color: #000; /* Changer la couleur du texte en noir */
+font-weight: 300;
+text-align: left; /* Aligner le texte à gauche */
+font-size: 16px;
+padding-top: 7px;
+}
+
+.faq-resume {
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-weight: 500;
+cursor: pointer;
+text-align: left; /* Aligner le texte à gauche */
+}
+
+
+.faq-resume:focus {
+outline: none;
+}
+
+.faq-resume:focus::after {
+content: "";
+height: 100%;
+width: 100%;
+display: block;
+position: absolute;
+top: 0;
+left: 0;
+box-shadow: 0 0 0 5px rebeccapurple;
+}
+
+.faq-resume::-webkit-details-marker {
+display: none;
+}
+
+.icone-controle {
+fill: rebeccapurple;
+transition: .3s ease;
+pointer-events: none;
+}
+
+.icone-fermer {
+display: none;
+}
+
+.faq-item[open] .icone-fermer {
+display: initial;
+transition: .3s ease;
+}
+
+.faq-item[open] .icone-expand {
+display: none;
+}
+
+
+
+
+/*page pour donner*/
+
+
+.texte-sousletitre {
+font-size: 1.2rem;
+margin-bottom: 20px;
+max-width: 800px; /* Limite la largeur du texte */
+margin: 0 auto; /* Centre le texte */
+padding: 10px 20px; /* Ajoute un peu de padding pour espacer le texte */
+border: 2px solid #fff; /* Ajoute une bordure blanche */
+border-radius: 10px; /* Ajoute des coins arrondis */
+background-color: rgba(255, 255, 255, 0.2); /* Ajoute un fond semi-transparent */
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajoute une ombre pour un effet de profondeur */
+font-family: 'Courier New', Courier, monospace; /* Utilise une police plus stylée */
+color: #fff;
+}
+
+.principal-donner {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+gap: 20px;
+justify-content: center;
+padding: 20px;
+}
+
+.donner-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+min-height: 300px; /* Hauteur minimale pour s'adapter au contenu */
+padding: 20px;
+border-radius: 10px;
+box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+background-color: rgba(255, 255, 255, 0.8);
+color: #000;
+transition: all 0.3s ease;
+}
+
+.donner-container::after {
+content: "";
+display: block;
+clear: both;
+}
+
+.donner-container h2 {
+margin-bottom: 10px;
+}
+
+.donner-container p {
+line-height: 1.4;
+flex-grow: 1; /* Permet au texte de s'étendre */
+}
+
+img {
+width: 150px;
+height: 150px;
+object-fit: cover;
+border-radius: 50%;
+margin-bottom: 20px;
+margin: 10px;
+}
+
+
+
+/* Style pour le bouton de retour en haut */
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: block; /* Affiché par défaut */
+  background: none; /* Supprime le fond */
+  border: none; /* Supprime la bordure */
+  opacity: 0.7;
+  transition: opacity 0.3s ease;
+}
+
+#scrollToTopBtn img {
+  width: auto; /* Conserve les dimensions originales de l'image */
+  height: auto; /* Conserve les dimensions originales de l'image */
+  max-width: 50px; /* Limite la largeur maximale de l'image */
+  max-height: 50px; /* Limite la hauteur maximale de l'image */
+}
+
+#scrollToTopBtn:hover {
+  opacity: 1;
+}
+
+.footer {
+background-color: #333;
+color: #fff;
+padding: 20px 0;
+text-align: center;
+}
+
+.footer-content {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-around;
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+}
+
+.footer-section {
+flex: 1;
+min-width: 250px;
+margin: 10px;
+}
+
+.footer-title {
+font-size: 1.5rem;
+margin-bottom: 10px;
+}
+
+.footer-section p {
+font-size: 1rem;
+line-height: 1.6;
+}
+
+.footer-section ul {
+list-style: none;
+padding: 0;
+}
+
+.footer-section ul li {
+margin: 5px 0;
+}
+
+.footer-section ul li a {
+color: #fff;
+text-decoration: none;
+font-size: 1rem;
+}
+
+.footer-section ul li a:hover {
+text-decoration: underline;
+}
+
+.footer-bottom {
+background-color: #222;
+padding: 10px 0;
+margin-top: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.footer-bottom p {
+margin: 0;
+font-size: 0.9rem;
+}
+
+.footer-logo {
+width: 100px; /* Ajustez la taille selon vos besoins */
+height: auto;
+margin-bottom: 10px;
+border-radius: 0;
+object-fit: contain;
+}
+
+
+
+/*CV Maylee*/
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+background-color: #f4f4f4;
+font-size: 14px;
+}
+
+.cv-container {
+background-image: url('images/beige.jpg');
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+min-height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 20px 0;
+}
+
+.cv-content {
+display: flex;
+max-width: 800px;
+margin: 20px auto;
+padding: 20px;
+background: rgba(255, 255, 255, 0.9);
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cv-left {
+flex: 1;
+max-width: 30%;
+padding: 10px;
+}
+
+.cv-right {
+flex: 2;
+max-width: 70%;
+padding: 10px;
+}
+
+.cv-photo img {
+border-radius: 0;
+width: 200px;
+height: 200px;
+object-fit: cover;
+display: block;
+margin: 0 auto 20px;
+object-fit: contain;
+}
+
+.cv-header {
+margin-top: 20px;
+margin-bottom: 140px;
+}
+
+.cv-header h1 {
+font-size: 1.8em;
+margin-bottom: 20px;
+}
+
+.cv-header p {
+margin: 0;
+font-size: 1em;
+color: #555;
+}
+
+h2 {
+border-bottom: 2px solid #333;
+padding-bottom: 5px;
+margin-top: 30px;
+margin-bottom: 20px;
+font-size: 1.2em;
+}
+
+a {
+color: #007BFF;
+text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+ul {
+list-style-type: none;
+padding: 0;
+}
+
+li {
+margin-bottom: 10px;
+}
+
+.cv-education ul,
+.cv-experience ul {
+padding: 0;
+margin: 0;
+}
+
+.cv-education li,
+.cv-experience li {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 10px;
+}
+
+.cv-date {
+text-align: right;
+min-width: 100px;
+color: #555;
+font-size: 0.9em;
+}
+
+.cv-hobbies ul,
+.cv-languages ul {
+padding-left: 15px;
+}
+
+
+/*cv sarah*/
+
+.photo-sarah {
+  display: block;
+  margin: 0 auto;
+  border-radius: 50%;
+  width: 170px;
+  height: 170px;
+  object-fit: cover;
+  border: 2px solid #ccc;
+  margin-bottom: 10px;
+}
+.cv-container-sarah {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 2px 5px black;
+}
+
+.header-sarah {
+  text-align: center;
+  background:#3F2204;
+  color: white;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.header-sarah img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.header-sarah h1 {
+  margin: 10px 0;
+  font-size: 2em;
+}
+
+section {
+  margin-bottom: 10px;
+  padding: 10px 20px;
+}
+
+section h2 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  color: #2e2e2e;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin-bottom: 10px;
+}
+
+.interests-sarah p,
+.languages-sarah ul,
+.soft-skills-sarah ul {
+  margin: 0;
+}
+
+.languages-sarah ul,
+.soft-skills-sarah ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+
+
+/* Media query pour les écrans plus petits */
+@media screen and (max-width: 640px) {
+.product-grid {
+    grid-template-columns: 1fr; /* Une seule colonne */
+    gap: 20px; /* Réduction de l'espacement entre les produits */
+}
+
+.product-card {
+    padding: 12px; /* Réduction des marges internes */
+    font-size: 0.9em; /* Réduction de la taille du texte */
+    margin: 10px;
+}
+
+.product-card img {
+    max-width: 90%; /* Réduction de la taille des images */
+    margin: 0 auto; /* Centrage de l'image */
+}
+
+.buttons {
+    display: flex;
+    justify-content: center; /* Centre les boutons horizontalement */
+    gap: 0.5em; /* Espacement entre les boutons */
+}
+
+.buttons .add {
+    padding: 0.6em 1.2em; /* Taille normale pour le bouton Ajouter au panier */
+    font-size: 1em; /* Taille du texte */
+}
+
+.buttons .like {
+    padding: 0.3em; /* Bouton plus petit */
+    font-size: 0.9em; /* Texte plus petit */
+    width: 40px; /* Largeur fixe pour garantir une petite taille */
+    height: 40px; /* Hauteur fixe pour un bouton circulaire */
+    display: flex; /* Assure le centrage de l'icône */
+    align-items: center; /* Centre verticalement */
+    justify-content: center; /* Centre horizontalement */
+}
+
+/* Page accueil */
+.texte-sousletitre {
+    font-size: 1rem; /* Réduction de la taille du texte */
+    margin-bottom: 20px;
+    margin: 20px;
+    max-width: 800px; /* Limite la largeur du texte */
+    padding: 10px 20px; /* Ajoute un peu de padding pour espacer le texte */
+    border: 2px solid #fff; /* Ajoute une bordure blanche */
+    border-radius: 10px; /* Ajoute des coins arrondis */
+    background-color: rgba(255, 255, 255, 0.2); /* Ajoute un fond semi-transparent */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajoute une ombre pour un effet de profondeur */
+    font-family: 'Courier New', Courier, monospace; /* Utilise une police plus stylée */
+}
+
+.principal-donner {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.container-contact {
+    max-width: 700px;
+    width: 80%;
+    background: #fff; /* Fond blanc pour le formulaire */
+    padding: 25px 30px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    color: #000; /* Changer la couleur du texte en noir */
+}
+
+.user-details .input-box .details {
+    display: grid;
+    grid-template-columns: 1fr, 1fr;
+}
+
+.textedistribution {
+    font-size: 14px; /* Réduction de la taille du texte */
+    padding-right: 9%;
+    padding-left: 9%;
+    padding-top: 30px;
+}
+
+h1.page-title {
+    font-size: 16px; /* Réduction de la taille du titre */
+}
+
+h1 {
+    font-size: 14px; /* Réduction de la taille du titre */
+    margin: 17px;
+}
+
+.global {
+    height: 435px;
+    background-color: #fff;
+    font-size: 200px;
+}
+
+.parallax2 {
+    width: none;
+    background-image: none;
+    min-height: 200px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    content: url(images/foret.jpg);
+}
+
+.parallax1 {
+    /* L'image utilisée */
+    background-image: url("images/foret.jpg");
+
+    /* Définit une hauteur spécifique */
+    min-height: 200px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.menu-icon {
+  display: flex;
+}
+
+.menu {
+  display: none;
+  flex-direction: column;
+  width: 100%;
+  background-color: #333;
+  position: absolute;
+  top: 60px; /* Ajustez cette valeur en fonction de la hauteur de votre barre de navigation */
+  left: 0;
+  right: 0;
+}
+
+.menu li {
+  margin: 10px 0;
+  text-align: center;
+}
+
+.menu-toggle:checked ~ nav .menu {
+  display: flex;
+}
+
+.page-title {
+    /* Pour les titres de pages blanches */
+    color: #22372b;
+}
+
+
+.titre h1 {
+    /* Taille du titre hikoclothing */
+    color: #fff;
+    font-size: 3rem; /* Réduction de la taille du titre */
+    margin-bottom: 20px;
+    margin-top: auto;
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.7);
+}
+
+
+.header-background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/satin.jpg);
+  height: fit-content;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.header-background-accueil {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(images/satin.jpg);
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.bouton {
+  display: flex;
+  gap: 20px;
+}
+
+.bouton a {
+  color: #fff;
+  text-decoration: none;
+  border: 1px solid #fff;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+  transition: 0.3s ease;
+}
+
+.bouton a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.container-contact {   /*Concerne le formulaire*/
+  padding: 15px;
+}
+
+.user-details {
+  flex-direction: column;
+}
+
+.user-details .input-box {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.gender-details .category {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.gender-details .category label {
+  margin-bottom: 10px;
+}
+
+.button input {
+  width: 100%;
+}
+
+.input-box {
+  width: 100%;
+}
+
+.faq-item {                       /*FAQ*/
+width: 90%;
+padding: 15px;
+font-size: 18px;
+}
+
+.faq-resume {
+flex-direction: column;
+align-items: flex-start;
+}
+
+.faq-resume .icone-controle {
+margin-top: 10px;
+}
+
+.faq-reponse {
+font-size: 16px;
+}
+
+.footer-content {                  /*Concerne le footer*/
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-section {
+  min-width: 100%;
+  margin: 10px 0;
+}
+
+.footer-logo {
+  width: 80px; /* Ajustez la taille pour les petits écrans */
+  height: auto;
+  border-radius: 0;
+  object-fit: contain;
+}
+
+
+.content-section-1  img{
+  display: block;
+  width: 100%;
+}
+
+.content-section-1  .text-env{
+  vertical-align: middle;
+  width: 100%;
+
+}
+
+.content-section-2  img{
+  float: right;
+  width: 100%;
+}
+
+.content-section-2  .text-env{
+  vertical-align: middle;
+  margin-top: 5em;
+  width: 100%;
+
+}
+
+
+
+
+}
+
+/* Social icons */
+.social-icons {
+display: flex;
+justify-content: center;
+gap: 10px;
+}
+
+.social-icons a {
+display: inline-block;
+width: 30px;
+height: 30px;
+}
+
+.social-icons a img {
+width: 100%;
+height: 100%;
+object-fit: contain;
+}
+
+
+
+/*Pour environnement*/
+.image-left, .image-right {
+  width: 100%; /* Prend toute la largeur disponible */
+  height: auto; /* Conserve les proportions de l'image */
+  display: block; /* Assure que l'image prend toute la largeur disponible */
+  object-fit: contain; /* Assure que l'image est contenue dans son conteneur sans être déformée */
+  border-radius: 0; /* Assure que les coins de l'image ne sont pas arrondis */
+  margin: 0; /* Supprime les marges indésirables */
+  padding: 20px;
+}
+
+/* Classe pour le texte à gauche et à droite */
+.text-left, .text-right {
+  font-size: 1.2rem;
+  margin:20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  max-width: 100%; /* Limite la largeur du texte */
+  padding: 15px; /* Ajoute un peu de padding pour espacer le texte */
+  border: 2px solid #fff; /* Ajoute une bordure blanche */
+  border-radius: 10px; /* Ajoute des coins arrondis */
+  background-color: rgba(255, 255, 255, 0.2); /* Ajoute un fond semi-transparent */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ajoute une ombre pour un effet de profondeur */
+  font-family: 'Courier New', Courier, monospace; /* Utilise une police plus stylée */
+  color: #fff;
+  margin-left: 0; /* Ajoute une marge pour espacer le texte de l'image */
+}
+
+/* Classe pour le conteneur de contenu */
+.contentenv .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Classe pour le conteneur de contenu avec l'image à droite */
+.contentenv.image-right-container .content {
+  flex-direction: column;
+}
+
+/* Classe pour le conteneur de contenu avec l'image à gauche */
+.contentenv.image-left-container .content {
+  flex-direction: column;
+}
+
+
+
+/*Pour le cv de maylee*/

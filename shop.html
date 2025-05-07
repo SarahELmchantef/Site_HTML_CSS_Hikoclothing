@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Shopper</title>
+</head>
+<body>
+  <div class="header-background">
+    <a id="top"></a>
+    <header>
+      <!-- Barre de navigation -->
+      <div class="navigation-bar">
+        <div class="logo">
+          <a href="index.html">Hiko<span>Clothing</span></a>
+        </div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+          <span class="menu-line"></span>
+        </label>
+        <nav>
+          <ul class="menu">
+              <li>
+                  <a href="index.html">Accueil</a>
+              </li>
+              <li>
+                  <a href="nouv.html">Nouveautés</a>
+              </li>
+              <li>
+                  <a href="environnement.html">Environnement</a>
+              </li>
+              <li class="active">
+                  <a href="shop.html">Shopper</a>
+              </li>
+              <li>
+                  <a href="donner.html">Donner</a>
+              </li>
+              <li>
+                  <a href="aprop.html">À propos de nous</a>
+              </li>
+              <li>
+                  <a href="contact.html">Contact</a>
+              </li>
+              <li>
+                <a href="connexion.html">Connexion</a>
+              </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <h1 class="page-title2">Nos produits</h1>
+      <div class="texte-sousletitre">
+        <p>Nos produits sont issus de l'upcycling : ils étaient 
+          autrefois d'autres vêtements, puis grâce au savoir-faire
+          de nos ateliers, une nouvelle vie leur est donnée. Tous 
+          les articles que vous trouverez sur ce site ont été 
+          fabriqués en France, dans des conditions éthiques.<br> 
+        </p>
+    </div>
+      <div class="shopper">
+        <div class="product-grid">
+          <!-- Produit 1 -->
+          <div class="product-card">
+            <div class="slides">
+              <!-- SLIDE 1 -->
+              <input type="radio" name="slides1" id="slide1-1" checked>
+              <figure>
+                <img src="images/veste.png" alt="Produit 1 Image 1">
+                <label for="slide1-2" class="next">&#9654;</label>
+              </figure>
+              <!-- SLIDE 2 -->
+              <input type="radio" name="slides1" id="slide1-2">
+              <figure>
+                <img src="images/veste1.png" alt="Produit 1 Image 2">
+                <label for="slide1-1" class="last">&#9664;</label>
+              </figure>
+            </div>
+            <h1>Veste rétro</h1>
+            <h2>100€</h2>
+            <p>Cette veste est parfaite pour le sport !</p>
+            <form>
+              <div class="sizes">
+                <label><input type="radio" name="size1" value="XS"> XS</label>
+                <label><input type="radio" name="size1" value="S"> S</label>
+                <label><input type="radio" name="size1" value="M"> M</label>
+                <label><input type="radio" name="size1" value="L"> L</label>
+                <label><input type="radio" name="size1" value="XL"> XL</label>
+              </div>
+            </form>
+            <div class="buttons">
+              <button class="add">Ajouter au panier</button>
+              <button class="like">♡</button>
+            </div>
+          </div>
+
+          <!-- Produit 2 -->
+          <div class="product-card">
+            <div class="slides">
+              <!-- SLIDE 1 -->
+              <input type="radio" name="slides2" id="slide2-1" checked>
+              <figure>
+                <img src="images/tricot1.png" alt="Produit 2 - Image 1">
+                <label for="slide2-2" class="next">&#9654;</label>
+              </figure>
+              <!-- SLIDE 2 -->
+              <input type="radio" name="slides2" id="slide2-2">
+              <figure>
+                <img src="images/tricot.png" alt="Produit 2 - Image 2">
+                <label for="slide2-1" class="last">&#9664;</label>
+                <label for="slide2-3" class="next">&#9654;</label>
+              </figure>
+              <!-- SLIDE 3 -->
+              <input type="radio" name="slides2" id="slide2-3">
+              <figure>
+                <img src="images/tricotr.png" alt="Produit 2 - Image 3">
+                <label for="slide2-2" class="last">&#9664;</label>
+              </figure>
+            </div>
+            <h1>Tricot beige</h1>
+            <h2>55€</h2>
+            <p>Un tricot tout doux.</p>
+            <form>
+              <div class="sizes">
+                <label><input type="radio" name="size2" value="XS"> XS</label>
+                <label><input type="radio" name="size2" value="S"> S</label>
+                <label><input type="radio" name="size2" value="M"> M</label>
+                <label><input type="radio" name="size2" value="L"> L</label>
+                <label><input type="radio" name="size2" value="XL"> XL</label>
+              </div>
+            </form>
+            <div class="buttons">
+              <button class="add">Ajouter au panier</button>
+              <button class="like">♡</button>
+            </div>
+          </div>
+
+          <!-- Produit 3 -->
+          <div class="product-card">
+            <div class="slides">
+              <!-- SLIDE 1 -->
+              <input type="radio" name="slides3" id="slide3-1" checked>
+              <figure>
+                <img src="images/sweat2v.png" alt="Produit 3 - Image 1">
+                <label for="slide3-2" class="next">&#9654;</label>
+              </figure>
+              <!-- SLIDE 2 -->
+              <input type="radio" name="slides3" id="slide3-2">
+              <figure>
+                <img src="images/sweat2r.png" alt="Produit 3 - Image 2">
+                <label for="slide3-1" class="last">&#9664;</label>
+              </figure>
+            </div>
+            <h1>Pull-sweatshirt</h1>
+            <h2>150€</h2>
+            <p>Vous ne le trouverez nulle part ailleurs !</p>
+            <form>
+              <div class="sizes">
+                <label><input type="radio" name="size3" value="XS"> XS</label>
+                <label><input type="radio" name="size3" value="S"> S</label>
+                <label><input type="radio" name="size3" value="M"> M</label>
+                <label><input type="radio" name="size3" value="L"> L</label>
+                <label><input type="radio" name="size3" value="XL"> XL</label>
+              </div>
+            </form>
+            <div class="buttons">
+              <button class="add">Ajouter au panier</button>
+              <button class="like">♡</button>
+            </div>
+          </div>
+
+          <!-- Produit 4 -->
+          <div class="product-card">
+            <div class="slides">
+              <!-- SLIDE 1 -->
+              <input type="radio" name="slides4" id="slide4-1" checked>
+              <figure>
+                <img src="images/tshirtbleup.png" alt="Produit 4 - Image 1">
+                <label for="slide4-2" class="next">&#9654;</label>
+              </figure>
+              <!-- SLIDE 2 -->
+              <input type="radio" name="slides4" id="slide4-2">
+              <figure>
+                <img src="images/tshirtbleur.png" alt="Produit 4 - Image 2">
+                <label for="slide4-1" class="last">&#9664;</label>
+              </figure>
+            </div>
+            <h1>T-shirt épais</h1>
+            <h2>25€</h2>
+            <p class="description">Un bleu intense...</p>
+            <form>
+              <div class="sizes">
+                <label><input type="radio" name="size4" value="XS"> XS</label>
+                <label><input type="radio" name="size4" value="S"> S</label>
+                <label><input type="radio" name="size4" value="M"> M</label>
+                <label><input type="radio" name="size4" value="L"> L</label>
+                <label><input type="radio" name="size4" value="XL"> XL</label>
+              </div>
+            </form>
+            <div class="buttons">
+              <button class="add">Ajouter au panier</button>
+              <button class="like">♡</button>
+            </div>
+          </div>
+
+          <!-- Produit 5 -->
+          <div class="product-card">
+            <div class="slides">
+              <!-- SLIDE 1 -->
+              <input type="radio" name="slides5" id="slide5-1" checked>
+              <figure>
+                <img src="images/sacorange.png" alt="Produit 5 - Image 1">
+                <label for="slide5-2" class="next">&#9654;</label>
+              </figure>
+              <!-- SLIDE 2 -->
+              <input type="radio" name="slides5" id="slide5-2">
+              <figure>
+                <img src="images/sacorange2.png" alt="Produit 5 - Image 2">
+                <label for="slide5-1" class="last">&#9664;</label>
+              </figure>
+            </div>
+            <h1>Petit sac orange</h1>
+            <h2>35€</h2>
+            <p class="description">Vous ne passerez pas inaperçu !</p>
+            <div class="buttons">
+              <button class="add">Ajouter au panier</button>
+              <button class="like">♡</button>
+            </div>
+          </div>
+
+          <!-- Produit 6 -->
+          <div class="product-card">
+            <div class="slides">
+              <!-- SLIDE 1 -->
+              <input type="radio" name="slides6" id="slide6-1" checked>
+              <figure>
+                <img src="images/product7-1.png" alt="Produit 6 - Image 1">
+                <label for="slide6-2" class="next">&#9654;</label>
+              </figure>
+              <!-- SLIDE 2 -->
+              <input type="radio" name="slides6" id="slide6-2">
+              <figure>
+                <img src="images/product7-3.png" alt="Produit 6 - Image 2">
+                <label for="slide6-1" class="last">&#9664;</label>
+                <label for="slide6-3" class="next">&#9654;</label>
+              </figure>
+              <!-- SLIDE 3 -->
+              <input type="radio" name="slides6" id="slide6-3">
+              <figure>
+                <img src="images/product7-2.png" alt="Produit 6 - Image 3">
+                <label for="slide6-2" class="last">&#9664;</label>
+              </figure>
+            </div>
+            <h1>Pull vagues</h1>
+            <h2>100€</h2>
+            <p class="description">Une veste rétro élégante, inspirée des années 90.</p>
+            <form>
+              <div class="sizes">
+                <label><input type="radio" name="size6" value="XS"> XS</label>
+                <label><input type="radio" name="size6" value="S"> S</label>
+                <label><input type="radio" name="size6" value="M"> M</label>
+                <label><input type="radio" name="size6" value="L"> L</label>
+                <label><input type="radio" name="size6" value="XL"> XL</label>
+              </div>
+            </form>
+            <div class="buttons">
+              <button class="add">Ajouter au panier</button>
+              <button class="like">♡</button>
+            </div>
+          </div>
+
+          <!-- Produit 7 -->
+          <div class="product-card">
+            <div class="slides">
+              <!-- SLIDE 1 -->
+              <input type="radio" name="slides7" id="slide7-1" checked>
+              <figure>
+                <img src="images/robe.png" alt="Produit 7 - Image 1">
+                <label for="slide7-2" class="next">&#9654;</label>
+              </figure>
+              <!-- SLIDE 2 -->
+              <input type="radio" name="slides7" id="slide7-2">
+              <figure>
+                <img src="images/robe1.png" alt="Produit 7 - Image 2">
+                <label for="slide7-1" class="last">&#9664;</label>
+                <label for="slide7-3" class="next">&#9654;</label>
+              </figure>
+              <!-- SLIDE 3 -->
+              <input type="radio" name="slides7" id="slide7-3">
+              <figure>
+                <img src="images/robe2.png" alt="Produit 7 - Image 3">
+                <label for="slide7-2" class="last">&#9664;</label>
+              </figure>
+            </div>
+            <h1>Robe d'été</h1>
+            <h2>70€</h2>
+            <p class="description">Vive le printemps !</p>
+            <form>
+              <div class="sizes">
+                <label><input type="radio" name="size7" value="XS"> XS</label>
+                <label><input type="radio" name="size7" value="S"> S</label>
+                <label><input type="radio" name="size7" value="M"> M</label>
+                <label><input type="radio" name="size7" value="L"> L</label>
+                <label><input type="radio" name="size7" value="XL"> XL</label>
+              </div>
+            </form>
+            <div class="buttons">
+              <button class="add">Ajouter au panier</button>
+              <button class="like">♡</button>
+            </div>
+          </div>
+
+          <!-- Produit 8 -->
+          <div class="product-card">
+            <div class="slides">
+              <!-- SLIDE 1 -->
+              <input type="radio" name="slides8" id="slide8-1" checked>
+              <figure>
+                <img src="images/product8-1.png" alt="Produit 8 - Image 1">
+                <label for="slide8-2" class="next">&#9654;</label>
+              </figure>
+              <!-- SLIDE 2 -->
+              <input type="radio" name="slides8" id="slide8-2">
+              <figure>
+                <img src="images/product8-2.png" alt="Produit 8 - Image 2">
+                <label for="slide8-1" class="last">&#9664;</label>
+                <label for="slide8-3" class="next">&#9654;</label>
+              </figure>
+              <!-- SLIDE 3 -->
+              <input type="radio" name="slides8" id="slide8-3">
+              <figure>
+                <img src="images/product8-3.png" alt="Produit 8 - Image 3">
+                <label for="slide8-2" class="last">&#9664;</label>
+              </figure>
+            </div>
+            <h1>Sweatshirt fleuri</h1>
+            <h2>110€</h2>
+            <p class="description">Il apporte un peu de soleil !</p>
+            <form>
+              <div class="sizes">
+                <label><input type="radio" name="size8" value="XS"> XS</label>
+                <label><input type="radio" name="size8" value="S"> S</label>
+                <label><input type="radio" name="size8" value="M"> M</label>
+                <label><input type="radio" name="size8" value="L"> L</label>
+                <label><input type="radio" name="size8" value="XL"> XL</label>
+              </div>
+            </form>
+            <div class="buttons">
+              <button class="add">Ajouter au panier</button>
+              <button class="like">♡</button>
+            </div>
+          </div>
+
+          <!-- Produit 9 -->
+          <div class="product-card">
+            <div class="slides">
+              <!-- SLIDE 1 -->
+              <input type="radio" name="slides9" id="slide9-1" checked>
+              <figure>
+                <img src="images/product9-1.png" alt="Produit 9 - Image 1">
+                <label for="slide9-2" class="next">&#9654;</label>
+              </figure>
+              <!-- SLIDE 2 -->
+              <input type="radio" name="slides9" id="slide9-2">
+              <figure>
+                <img src="images/product9-2.png" alt="Produit 9 - Image 2">
+                <label for="slide9-1" class="last">&#9664;</label>
+              </figure>
+            </div>
+            <h1>Adidas en fleurs !</h1>
+            <h2>30€</h2>
+            <p class="description">Une casquette stylée, fabriquée à partir de matériaux recyclés.</p>
+            <form>
+              <div class="sizes">
+                <label><input type="radio" name="size9" value="XS"> XS</label>
+                <label><input type="radio" name="size9" value="S"> S</label>
+                <label><input type="radio" name="size9" value="M"> M</label>
+                <label><input type="radio" name="size9" value="L"> L</label>
+                <label><input type="radio" name="size9" value="XL"> XL</label>
+              </div>
+            </form>
+            <div class="buttons">
+              <button class="add">Ajouter au panier</button>
+              <button class="like">♡</button>
+            </div>
+          </div>
+
+          <!-- Produit 10 -->
+          <div class="product-card">
+            <div class="slides">
+              <!-- SLIDE 1 -->
+              <input type="radio" name="slides10" id="slide10-1" checked>
+              <figure>
+                <img src="images/casquette1.png" alt="Produit 10 - Image 1">
+                <label for="slide10-2" class="next">&#9654;</label>
+              </figure>
+              <!-- SLIDE 2 -->
+              <input type="radio" name="slides10" id="slide10-2">
+              <figure>
+                <img src="images/casquette.png" alt="Produit 10 - Image 2">
+                <label for="slide10-1" class="last">&#9664;</label>
+                <label for="slide10-3" class="next">&#9654;</label>
+              </figure>
+              <!-- SLIDE 3 -->
+              <input type="radio" name="slides10" id="slide10-3">
+              <figure>
+                <img src="images/casquette2.png" alt="Produit 10 - Image 3">
+                <label for="slide10-2" class="last">&#9664;</label>
+              </figure>
+            </div>
+            <h1>Une casquette en jean denim...</h1>
+            <h2>30€</h2>
+            <p class="description">Un sac à dos compact et fonctionnel, idéal pour la vie quotidienne.</p>
+            <form>
+              <div class="sizes">
+                <label><input type="radio" name="size10" value="XS"> XS</label>
+                <label><input type="radio" name="size10" value="S"> S</label>
+                <label><input type="radio" name="size10" value="M"> M</label>
+                <label><input type="radio" name="size10" value="L"> L</label>
+                <label><input type="radio" name="size10" value="XL"> XL</label>
+              </div>
+            </form>
+            <div class="buttons">
+              <button class="add">Ajouter au panier</button>
+              <button class="like">♡</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </div>
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-section about">
+      <h2 class="footer-title"> </h2>
+      <p>HikoClothing est une marque de vêtements dédiée à 
+        la mode durable et éthique. Toutes nos pièces sont 
+        cousues et fabriquées en France dans des ateliers
+        respecteux de l'environnement et de nos salariés.
+      </p>
+    </div>
+    <div class="footer-section contact">
+      <h2 class="footer-title">Contact</h2>
+      <p>Email: contact@hikoclothing.com</p>
+      <p>Téléphone: +33 1 23 45 67 89</p>
+      <p>Adresse: 123 Rue de la Mode, 75000 Paris, France</p>
+    </div>
+    <div class="footer-section social">
+      <h2 class="footer-title">Suivez-nous</h2>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/share/19qMdvVkHs/" target="_blank"><img src="images/facebook1.jpg" alt="Facebook"></a>
+        <a href="https://x.com/HikoClothingfr" target="_blank"><img src="images/twitter.png" alt="Twitter"></a>
+        <a href="https://www.instagram.com/hiko.clothing?igsh=MTM1eHFxaWcwc2NtNw==" target="_blank"><img src="images/insta.png" alt="Instagram"></a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <img src="images/upec.jpg" alt="HikoClothing Logo" class="footer-logo">
+    <p>&copy; HikoClothing, Janvier 2024, PEIRO TOMAS Maylee, EL MCHANTEF Sarah et BAMBA Espera. Tous droits réservés.</p>
+  </div>
+</footer>
+<a href="#top" id="scrollToTopBtn" title="Go to top">
+  <img src="images/fleche.png" alt="Go to top">
+</a>
+</body>
+</html>
